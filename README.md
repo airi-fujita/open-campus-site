@@ -1,4 +1,8 @@
 # open-campus-site
+
+公開URL：
+https://airi-fujita.github.io/open-campus-site/
+
 授業課題として制作した架空の専門学校のオープンキャンパス特設サイトです。
 調理・製菓・栄養について学べる専門学校のオープンキャンパス特設サイトを制作しました。
 
