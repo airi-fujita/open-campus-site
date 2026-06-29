@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+
+  <script src="js/bootstrap.js"></script>
+
+  <title>食文化専門学校 オープンキャンパス申込フォーム</title>
+</head>
+
+<body>
+  <section class="container"> 
+    <form action="apply-completed.html" method="post">
+    <h1 class="mt-5 mb-5 text-center">オープンキャンパス申込フォーム</h1>
+    <p class="mb-5 text-center">オープンキャンパス参加をご希望の方は、以下のフォームに必要事項をご入力ください。<br>
+    入力内容をご確認のうえ、送信ボタンを押してください。
+    </p>
+    
+    <div class="control">
+      <span class="required">必須</span>
+      <label for="schedule" class="mb-2">参加希望日</label>
+      <select id="schedule" name="schedule" class="form-select" required>
+        <option value="">選択してください。</option>
+        <option value="6/7">2026年6月7日(日)</option>
+        <option value="6/21">2026年6月21日(日)</option>
+        <option value="7/26">2026年7月26日(日)</option>
+        <option value="8/1">2026年8月1日(日)</option>
+        <option value="8/15">2026年8月15日(日)</option>
+        <option value="8/16">2026年8月16日(日)</option>
+      </select>
+    </div>
+    <hr>
+
+    <div class="control">
+      <span class="required">必須</span>
+      <label for="name" class="mb-2">氏名</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="山田　太郎" required>
+    </div>
+    <hr>
+    <div class="control">
+      <span class="required">必須</span>
+      <label for="furigana" class="mb-2">フリガナ</label>
+      <input type="text" class="form-control" id="furigana" name="furigana" placeholder="ヤマダ　タロウ" required>
+    </div>
+    <hr>
+    <div class="control">
+      <span class="required">必須</span>
+      <label for="email" class="mb-2">メールアドレス</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com" required>
+    </div>
+    <hr>
+    <div class="control">
+      <span class="free">任意</span>
+      <label for="tel" class="mb-2">電話番号</label>
+      <input type="tel" class="form-control" id="tel" name="tel" placeholder="09012345678">
+    </div>
+    <hr>
+    <div class="d-flex justify-content-center mt-5 mb-5">
+    <button type="submit" id="send-button">送信</button>
+    </div>
+    <div class="text-center mb-5">
+      <p><a href="index.html">オープンキャンパス特設サイトへ戻る</a></p>
+    </div>
+    </form>
+  </section> 
+</body>
+
+<style>
+  
+  .required,
+  .free {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-size: 12px;
+  }
+
+
+  .required {
+    background: #ff5462;
+    color: white;
+  }
+  .free {
+  background: #959595;
+  color: white;
+  }
+  .control {
+    
+  width: 100%;
+  padding: 20px;
+
+  }
+  .form-select,
+  .form-control {
+    background-color: #FFEFE7;
+  }
+  .form-select:focus,
+  .form-control:focus {
+    background-color: #FFEFE7;
+    border-color: #ff9e69;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #ffb68e;
+  }
+  #send-button {
+    color: #ffffff;
+    background-color: #ff9e69;
+    font-size: large;
+    font-weight: 600;
+    width: 80%;
+    height: 44px;
+    padding: 8px;
+    border: 0;
+    border-radius: 99px;
+    transition: 0.3s;
+  }
+  #send-button:hover {
+    background-color: #ff742a;
+  }
+</style>
+</html>

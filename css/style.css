@@ -1,0 +1,266 @@
+
+    body {
+      font-family: "Zen Maru Gothic", sans-serif;
+    }
+
+    .accordion-button {
+      transition: 0.3s;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #FFEFE7;
+      color: #FF955B;
+    }
+
+    .accordion-button:hover {
+      background-color: #FFD4B8;
+    }
+
+    .accordion-button:focus {
+      box-shadow: none;
+    }
+
+    .accordion-item {
+      border: 2px solid #000000;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .fv {
+      background: linear-gradient(to right, rgba(241, 238, 237, 1) 0%,  rgba(241, 238, 237, 1) 30%, rgba(241, 238, 237, 0.95) 35%, rgba(241, 238, 237, 0.8) 40%, rgba(241, 238, 237, 0) 60%), url(../img/mainimg.png)  right center / cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .text-box {
+      text-align: left;
+      margin-top: 25vh;
+    }
+
+    
+  .label {
+    display: inline-block;
+    background: #FF955B;
+    padding: 0px 25px;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+    box-shadow: 0.5vw 0.5vw 1vw #BFBFBF;
+    color: white;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: bold;
+    font-size: 2.5vw;
+    letter-spacing: 0.1em;
+  }
+
+  
+  .sub {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-left: 25px;
+    color: #e58f4f;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+  }
+
+  
+  .title {
+    margin-top: 0px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 12vw;
+    line-height: 0.9;
+    background: linear-gradient(to right, #ffd34d, #ffa500);
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* skdCss */
+  .skd-card {
+    margin-top: 10px;
+    border: 3px solid #F5965B;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+    background-color: #FFEFE7;
+  }
+  
+  .skd-year {
+    margin-bottom: -30px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #FF955B;
+  }
+
+  .skd-date {
+    margin: -20px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    color: #ffffff;
+    -webkit-text-stroke: 2px #FF955B;
+  }
+
+  .skd-week {
+    margin-top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #FF955B;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color:#ffffff;
+  }
+
+  .skd-link {
+    display: block;
+    margin-top: 20px;
+    color: #FF955B;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .shadow-button {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .shadow-button:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
+
+  .shadow-button:active {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+  }
+
+  .custom-gradient {
+    background: linear-gradient(to bottom, #FFC400, #FFA600);
+  }
+
+  .image-slider {
+    overflow: hidden;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .image-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 50s linear infinite;
+  }
+
+  .image-track img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .image-slider.bottom .image-track {
+    animation-direction: reverse;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .rounded-30px {
+    border-radius: 30px;
+  }
+
+  #program-card .custom-img-size {
+    width: 100%;
+    aspect-ratio: 3/2;
+    border-radius: 30px 30px 0 0;
+    object-fit: cover;
+  }
+
+  #program-card p {
+    text-align: left;
+  }
+
+  #course-cards .custom-img-size {
+    aspect-ratio: 3/2;
+    border-radius: 30px 0 0 30px;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    #course-cards .custom-img-size {
+      border-radius: 30px 30px 0 0;
+      object-fit: cover;
+    }
+  }
+  
+  #course-cards p {
+    text-align: left;
+    letter-spacing: 10%;
+  }
+
+  
+  .accordion-button::before {
+    content: "Q.　";
+    font-weight: bold;
+    font-size: 30px;
+    color: #000000;
+  }
+
+  .font-inter {
+    font-family: "Inter", sans-serif;
+  }
+
+  .font-zen-maru-gothic {
+    font-family: "Zen Maru Gothic", sans-serif;
+
+  }
+
+  .bg-orange {
+    background: linear-gradient(to bottom, #FFAC7F 0%, #FF955B 80%);
+  }
+
+  .text-orange {
+    color: #ff9e69;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .container p {
+    text-align: center;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 0.05em;
+  }
+
+  .container h5 {
+    text-align: center;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  .skd-card {
+    opacity: 0;
+  }
+
+  .card {
+    opacity: 0;
+  }

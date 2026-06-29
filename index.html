@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+
+  <script src="js/bootstrap.js"></script>
+  <script src="js/schedule-cards.js" defer></script>
+  <script src="js/program-cards.js" defer></script>
+  <script src="js/course-cards.js" defer></script>
+  <script src="js/faq.js" defer></script>
+  <script src="js/footer.js" defer></script>
+  <script src="js/apply-button.js" defer></script>
+  <script src="js/navbar-item.js" defer></script>
+  
+  <title>食文化専門学校 オープンキャンパス</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">食文化専門学校</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto font-zen-maru-gothic" id="navbar-items">
+          <li class="nav-item mx-1">
+            <a class="nav-link bg-warning rounded-5 fw-bold px-3" href="apply.html">参加申込</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="fv container-fluid">
+    <div class="text-box">   
+      <p class="label">食の学びを、
+      </p><br>
+      <p class="label">もっと身近に。</p>
+      <p class="sub">FOOD CULTURE ACADEMY</p>
+      <h1 class="title">
+        OPEN<br>CAMPUS
+      </h1>
+    </div>
+  </section> 
+
+  <section id="schedule" class="bg-orange py-5">
+    <div class="container text-center">
+      <h2 class="text-white mb-5">開催日時</h2>
+      <div class="bg-white rounded-5 p-5">
+        <div id="skd-cards"></div>
+        <p class="fs-6 mt-5">＼　まずはお気軽にご参加ください！　／</p>
+        <div class="oc-apply-button"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="image-slider mt-0 mb-0" id="about-oc">
+    <div class="image-track">
+      <img src="./img/about-oc_01.png">
+        <img src="./img/about-oc_02.jpeg">
+        <img src="./img/about-oc_03.png">
+        <img src="./img/about-oc_04.jpeg">
+        <img src="./img/about-oc_05.jpeg">
+        <img src="./img/about-oc_06.jpeg">
+
+        <img src="./img/about-oc_01.png">
+        <img src="./img/about-oc_02.jpeg">
+        <img src="./img/about-oc_03.png">
+        <img src="./img/about-oc_04.jpeg">
+        <img src="./img/about-oc_05.jpeg">
+        <img src="./img/about-oc_06.jpeg">
+    </div>
+  </div>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-orange">オープンキャンパスの魅力</h2>
+      <p>オープンキャンパスでは、
+      <br>「食」を学ぶ楽しさを体験することができます。
+      <br>在学生や先生との交流を通して
+      <br>学生生活をリアルに体感することができます。
+      <br>パンフレットだけでは伝わらない学校の魅力を
+      <br>ぜひご自身の目で確かめてみてください。
+      </p>
+    </div>
+  </section>
+
+  <div class="image-slider bottom my-0">
+    <div class="image-track">
+      <img src="./img/about-oc_07.jpeg">
+      <img src="./img/about-oc_08.jpeg">
+      <img src="./img/about-oc_09.jpeg">
+      <img src="./img/about-oc_10.jpeg">
+      <img src="./img/about-oc_11.jpeg">
+      <img src="./img/about-oc_12.jpeg">
+
+      <img src="./img/about-oc_07.jpeg">
+      <img src="./img/about-oc_08.jpeg">
+      <img src="./img/about-oc_09.jpeg">
+      <img src="./img/about-oc_10.jpeg">
+      <img src="./img/about-oc_11.jpeg">
+      <img src="./img/about-oc_12.jpeg">
+    </div>
+  </div>
+
+  <section id="program" class="bg-orange py-5">
+    <div class="container">
+      <h2 class="text-white">プログラム</h2>
+      <p>オープンキャンパス当日の主なプログラムをご紹介します。
+      <br>先生や在校生と一緒に、調理・製菓の世界を体験してみましょう！
+      </p>
+      <div id="program-card"></div>
+    </div>
+  </section>
+
+  <section id="course" class="py-5">
+    <div class="container">
+      <h2 class="text-orange">学科紹介</h2>
+      <p>調理師学科、製菓学科、栄養士学科の3つの学科を設けています。
+      <br>実践的な授業と豊富な実習を通して、
+      <br>現場で活躍できる知識と技術を身に付けます。
+      </p>
+      <div id="course-cards"></div>
+    </div>
+  </section>
+
+  <section id="question" class="bg-orange py-5">
+    <div class="container">
+      <h2 class="text-white mb-5">よくあるご質問</h2>
+      <div id="question-accordion"></div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container text-center">
+      <p class="fs-6 mt-5">＼　まずはお気軽にご参加ください！　／</p>
+      <div class="oc-apply-button"></div>
+    </div>
+    </section>
+
+  <section class="py-5">
+      <div id="footer"></div>
+  </section>
+
+</body>
+</html>
